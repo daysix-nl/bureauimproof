@@ -1,0 +1,664 @@
+{
+    "key": "group_67542d5dca3dd",
+    "title": "Artikel",
+    "fields": [
+        {
+            "key": "field_6754310cd70ad",
+            "label": "Introductie",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 1,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_67542d5d958f4",
+            "label": "Introductie",
+            "name": "introductie",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "rows": 8,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_675430edd70ac",
+            "label": "Alinea 1",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_67542e530bbd6",
+            "label": "Anchor ID",
+            "name": "anchor_id",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "#",
+            "append": ""
+        },
+        {
+            "key": "field_67542ea20bbd7",
+            "label": "Anchor titel",
+            "name": "anchor_titel",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67542ec00bbd8",
+            "label": "Alinea 1",
+            "name": "alinea_1",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6754311fd70ae",
+            "label": "Afbeelding(en)",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_675430012e687",
+            "label": "",
+            "name": "afbeelding",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "geen-afbeelding": "Geen afbeelding",
+                "een-afbeelding": "Één afbeelding",
+                "twee-afbeeldingen": "Twee afbeeldingen"
+            },
+            "default_value": "geen-afbeelding",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_6754316cb9fb5",
+            "label": "Afbeelding",
+            "name": "eerste_afbeelding",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_675430012e687",
+                        "operator": "==",
+                        "value": "een-afbeelding"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_675430012e687",
+                        "operator": "==",
+                        "value": "twee-afbeeldingen"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "preview"
+        },
+        {
+            "key": "field_675431d5b9fb6",
+            "label": "Afbeelding",
+            "name": "tweede_afbeelding",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_675430012e687",
+                        "operator": "==",
+                        "value": "twee-afbeeldingen"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "preview"
+        },
+        {
+            "key": "field_675433e48ac3d",
+            "label": "Extra alinea's",
+            "name": "",
+            "aria-label": "",
+            "type": "accordion",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "open": 0,
+            "multi_expand": 0,
+            "endpoint": 0
+        },
+        {
+            "key": "field_675433f78ac3e",
+            "label": "",
+            "name": "extra_alinea",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Nieuwe alinea",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_6754340c8ac3f",
+                    "label": "Inhoud alinea",
+                    "name": "inhoud_alinea",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "tekst": "Tekst",
+                        "tekst-afbeelding-rechts": "Tekst + afbeelding rechts",
+                        "tekst-afbeelding-links": "Tekst + afbeelding links",
+                        "tekst-video": "Tekst + video",
+                        "een-afbeelding": "Één afbeelding",
+                        "twee-afbeeldingen": "Twee afbeeldingen",
+                        "drie-afbeeldingen": "Drie afbeeldingen"
+                    },
+                    "default_value": "tekst",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696235a96d1",
+                    "label": "Anchor ID",
+                    "name": "extra_anchor_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-rechts"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-links"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": "",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696271a96d2",
+                    "label": "Anchor titel",
+                    "name": "extra_anchor_titel",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-rechts"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-links"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696335d6413",
+                    "label": "Tekst",
+                    "name": "extra_tekst",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-rechts"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-links"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<h2>Lorem ipsum dolor sit amet<\/h2>\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0,
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696fc07fac3",
+                    "label": "Afbeelding",
+                    "name": "extra_afbeelding_1",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-rechts"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-afbeelding-links"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "een-afbeelding"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "twee-afbeeldingen"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "drie-afbeeldingen"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "preview",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696fe07fac4",
+                    "label": "Afbeelding",
+                    "name": "extra_afbeelding_2",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "twee-afbeeldingen"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "drie-afbeeldingen"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "preview",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696fe47fac5",
+                    "label": "Afbeelding",
+                    "name": "extra_afbeelding_3",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "drie-afbeeldingen"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "preview",
+                    "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67696fe87fac6",
+                    "label": "Video",
+                    "name": "extra_video",
+                    "aria-label": "",
+                    "type": "file",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "tekst-video"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "url",
+                    "library": "all",
+                    "min_size": "",
+                    "max_size": "",
+                    "mime_types": "mp3",
+                    "allow_in_bindings": 0,
+                    "parent_repeater": "field_675433f78ac3e"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/acf-artikel"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1734963834
+}

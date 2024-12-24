@@ -1,0 +1,131 @@
+.skewed-button {
+    display: flex;
+    font-family: "Sora", sans-serif;
+    font-size: 17px;
+    height: 51px;
+    padding: 0px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 90%);
+    overflow: hidden;
+
+    // MD
+    @media (min-width: 768px) {
+        font-size: 17px;
+        height: 51px;
+        padding: 0px 40px;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        height: 45px;
+        padding: 0px 40px;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+        font-size: 17px;
+        height: 51px;
+        padding: 0px 40px;
+    }
+
+    &.active,
+    &:active {
+        clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+    }
+}
+
+.tooltip {
+    padding: 8px 20px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #fff;
+    width: max-content;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    // MD
+    @media (min-width: 768px) {
+        padding: 8px 20px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+        padding: 8px 20px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+.link-underline {
+    &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2.5px;
+        background: #162CF5;
+
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    a.hoover-img {
+        img {
+            scale: 1;
+            transition-duration: .3s;
+        }
+
+        &:hover {
+            img {
+                scale: 1.05;
+                transition-duration: .3s;
+            }
+        }
+    }
+}
+
+.tooltip-oranje {
+    background: #F69D22;
+
+    svg path {
+        fill: #F69D22;
+    }
+}
+
+.tooltip-blauw {
+    background: #162CF5;
+
+    svg path {
+        fill: #162CF5;
+    }
+}
+
+.tooltip-groen {
+    background: #38C1B2;
+
+    svg path {
+        fill: #38C1B2;
+    }
+}

@@ -1,0 +1,74 @@
+.element-fade-in {
+    .fade-item {
+        opacity: 0;
+        transform: translateY(100px);
+        transition-property: opacity, transform; // Specificeer welke eigenschappen getransitioned moeten worden
+        transition-duration: 1.3s, 0.6s; // Stel verschillende duur voor opacity en transform in
+        // Stel een basisvertraging in voor alle items
+        transition-delay: 0s;
+    }
+
+    &.show {
+        .fade-item {
+            &:first-of-type {
+                opacity: 1;
+                transform: translateY(0px);
+                transition-delay: 0s;
+                transition-duration: 1s, 0.6s; // Gebruik dezelfde duurverdeling hier
+            }
+
+            @for $i from 2 through 100 {
+                &:nth-of-type(#{$i}) {
+                    opacity: 1;
+                    transform: translateY(0px);
+                    transition-delay: 0.1s * $i;
+                    transition-duration: 1.3s, 0.6s; // Gebruik dezelfde duurverdeling hier
+                }
+            }
+        }
+    }
+}
+
+.element-fade-in {
+    .tooltip {
+        opacity: 0;
+    }
+
+    &.show {
+        .tooltip {
+            animation: bounceIn .2s ease-out .3s forwards;
+        }
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(10px) scale(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateX(0) translateY(0) scale(1.1);
+        /* Dan iets terugveren */
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        /* Eindpositie */
+    }
+}
+
+main.share-close {
+    #share-section {
+        display: none;
+    }
+}
+
+main.share-open {
+    #share-section {
+        display: flex;
+        position: fixed;
+    }
+}

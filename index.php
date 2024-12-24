@@ -9,7 +9,7 @@
 get_header(); ?>
 
 
-<main>
+<main class="share-close">
     <?php the_content(); ?>
 </main>
 

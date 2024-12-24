@@ -1,0 +1,98 @@
+.buroimproof {
+
+    #filters input {
+        border: 1px solid #F2F2F2;
+        border-radius: 10px;
+    }
+
+
+
+    .chip {
+        display: inline-block;
+        background-color: #EDF5FF;
+        padding: 0px 20px;
+        margin: 5px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        border-radius: 999px;
+        font-weight: 500;
+        font-size: 16px;
+        color: #000000;
+        margin-top: 20px;
+        width: fit-content;
+        text-wrap: nowrap;
+
+        // MD
+        @media (min-width: 768px) {
+            margin-top: 25px;
+        }
+
+        // LG
+        @media (min-width: 1200px) {
+            margin-top: 50px;
+        }
+    }
+
+    .remove-chip {
+        margin-left: 12px;
+        font-weight: 500;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .scroll-blok {
+        scrollbar-width: none;
+    }
+
+    /* Standaard styling voor select */
+    select {
+        -webkit-appearance: none;
+        /* Safari's standaard stijl uitschakelen */
+        -moz-appearance: none;
+        /* Firefox's standaard stijl uitschakelen */
+        appearance: none;
+        /* Standaard stijl uitschakelen */
+        background-color: #ffffff !important;
+        /* Kies jouw achtergrondkleur */
+        color: #000000 !important;
+        /* Kies jouw tekstkleur */
+        padding: 10px;
+        border: 0px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        /* Verwijder focus outline */
+    }
+
+    /* Optioneel: Verwijder de standaard dropdown-pijl */
+    select::-ms-expand {
+        display: none !important;
+        /* Voor Internet Explorer en Edge */
+    }
+
+    // /* Verwijder de standaard focusring voor Safari */
+    // select:focus {
+    //     box-shadow: 0 0 0 3px rgba(100, 100, 250, 0.3) !important;
+    //     /* Optionele focus styling */
+    // }
+
+
+    /* Verwijder standaard focusring */
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        /* Voor browsers die box-shadow gebruiken bij focus */
+    }
+
+    /* Optioneel: Stel een aangepaste focusstijl in (indien gewenst) */
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #F2F2F2 !important;
+        /* Of een andere kleur naar keuze */
+    }
+
+}

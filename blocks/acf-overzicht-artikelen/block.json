@@ -1,0 +1,27 @@
+{
+  "name": "acf-overzicht-artikelen",
+  "title": "Overzicht artikelen",
+  "description": "",
+  "category": "bibliotheek",
+  "icon": "editor-table",
+  "keywords": [
+    "block"
+  ],
+  "supports": {
+    "mode": false,
+    "jsx": true
+  },
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "acf-overzicht-artikelen.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/wp-content/themes/bureauimproof/img/preview-images/leeg.jpeg",
+        "is_preview": true
+      }
+    }
+  }
+}

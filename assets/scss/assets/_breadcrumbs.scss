@@ -1,0 +1,40 @@
+.rank-math-breadcrumb {
+    width: fit-content !important;
+    background: #F7F7F7 !important;
+    height: 31px !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0px 13px !important;
+    border-radius: 10px !important;
+    font-size: 13px !important;
+
+    .last {
+        font-weight: 700 !important;
+    }
+
+    .separator {
+        font-size: 0px !important;
+    }
+
+    .separator:after {
+        content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='3.94' height='5.976' viewBox='0 0 3.94 5.976'%3E%3Cpath d='M-48.094 13672.944l2.2 2.226 2.083-2.226' transform='translate(-13672.096 -42.967) rotate(-90)' fill='none' stroke='%230f0e0e' stroke-linecap='round' stroke-width='1.2'/%3E%3C/svg%3E");
+        margin: 0px 5px !important;
+    }
+
+    // p a:nth-of-type(2) {
+    //     font-size: 0px;
+    //     display: inline-block;
+    //     /* Nodig om text-overflow te laten werken */
+    //     max-width: 100px !important;
+    //     /* Pas de breedte aan naar wens */
+
+    //     overflow: hidden !important;
+    //     /* Verbergt alles wat buiten de breedte valt */
+
+    //     &:after {
+    //         content: "...";
+    //         max-width: 40px !important;
+    //     }
+    // }
+}

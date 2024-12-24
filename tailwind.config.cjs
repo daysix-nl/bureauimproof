@@ -393,31 +393,28 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         ".container": {
-          maxWidth: "420px",
+          maxWidth: "390px",
           width: "auto",
           marginLeft: "auto",
           marginRight: "auto",
           paddingLeft: "15px",
           paddingRight: "15px",
-          "@screen sm": {
-            maxWidth: "390px",
-            width: "auto",
-          },
+
           "@screen md": {
-            maxWidth: "603px",
-            width: "603px",
+            maxWidth: "708px",
+            width: "708px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
           "@screen lg": {
-            maxWidth: "1145px",
-            width: "1145px",
+            maxWidth: "1147px",
+            width: "1147px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },
           "@screen xl": {
-            maxWidth: "1145px",
-            width: "1145px",
+            maxWidth: "1290px",
+            width: "1290px",
             paddingLeft: "0px",
             paddingRight: "0px",
           },

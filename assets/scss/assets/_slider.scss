@@ -1,0 +1,120 @@
+.swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
+    margin: 0 auto;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    position: relative !important;
+    left: unset !important;
+    bottom: unset !important;
+    z-index: 50;
+    height: 6px !important;
+    width: 100% !important;
+
+    // LG
+    @media (min-width: 1200px) {
+        width: 814px !important;
+        margin-left: 52px !important;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+        width: 914px !important;
+        margin-left: 65px !important;
+    }
+}
+
+.swiper-scrollbar-drag {
+    background: #38C1B2 !important;
+    border-radius: 99px !important;
+}
+
+.swiper-scrollbar {
+    border-radius: 99px !important;
+    background: #F5F5F5 !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    content: "" !important;
+}
+
+.swiper-button-next {
+    height: 60px !important;
+    top: unset !important;
+    bottom: 0px !important;
+    right: unset !important;
+    left: calc(50vw - 117px) !important;
+
+    @media (min-width: 768px) {
+        left: calc(50vw - 273px) !important;
+        height: 76px !important;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+        left: calc(50vw + 432px) !important;
+        height: 76px !important;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+        left: calc(50vw + 472px) !important;
+        height: 76px !important;
+    }
+
+    z-index: 2 !important;
+    width: unset !important;
+}
+
+.swiper-button-prev {
+    height: 60px !important;
+    top: unset !important;
+    bottom: 0px !important;
+    right: unset !important;
+    left: calc(50vw - 182px) !important;
+
+    @media (min-width: 768px) {
+        left: calc(50vw - 354px) !important;
+        height: 76px !important;
+    }
+
+    // LG
+    @media (min-width: 1200px) {
+        left: calc(50vw + 352px) !important;
+        height: 76px !important;
+    }
+
+    // XL
+    @media (min-width: 1352px) {
+        left: calc(50vw + 392px) !important;
+        height: 76px !important;
+    }
+
+    z-index: 2 !important;
+    width: unset !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 1 !important;
+    cursor: auto;
+    pointer-events: none;
+}
+
+
+@media (min-width: 1200px) {
+    .mytestimonials {
+
+        .swiper-slide {
+            margin-top: 10px !important;
+            margin-bottom: 0px !important;
+        }
+
+        .swiper-slide.swiper-slide-next {
+            margin-top: 0px !important;
+            margin-bottom: 10px !important;
+        }
+    }
+}
