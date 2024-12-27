@@ -44,35 +44,21 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "kennisbank"
+                "value": "artikel"
             }
         ],
         [
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "klantcase"
+                "value": "cx-begrip"
             }
         ],
         [
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "magazine"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "praktijkvoorbeeld"
-            }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "training"
+                "value": "interview"
             }
         ]
     ],
@@ -85,5 +71,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735026266
+    "modified": 1735309879
 }

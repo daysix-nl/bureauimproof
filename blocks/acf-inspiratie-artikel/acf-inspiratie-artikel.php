@@ -35,7 +35,7 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
                     <?php
                 }
                 ?>
-                <h1 class="text-42 leading-44 md:text-45 md:leading-55 lg:text-53 lg:leading-63 xl:text-60 xl:leading-70 font-bold text-[#000000] mt-[8px]"><?php the_title();?></h1>
+                <h1 class="text-36 leading-38 md:text-45 md:leading-55 lg:text-53 lg:leading-63 xl:text-60 xl:leading-70 font-bold text-[#000000] mt-[8px]"><?php the_title();?></h1>
                 <div class="flex text-12 leading-30 font-medium mt-[8px]">
                     <p><?php the_time('j F Y'); ?></p>
                     <?php
@@ -252,6 +252,18 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
             $image6_url = isset($image6['url']) ? esc_url($image6['url']) : '';
             $image6_alt = isset($image6['alt']) ? esc_attr($image6['alt']) : '';
             ?>
+            <?php
+            $link = get_sub_field('extra_button_1');
+            $link_url = isset($link['url']) ? esc_url($link['url']) : '';
+            $link_text = isset($link['title']) ? esc_html($link['title']) : '';
+            $link_target = isset($link['target']) ? esc_attr($link['target']) : '';
+            ?>
+            <?php
+            $link2 = get_sub_field('extra_button_2');
+            $link2_url = isset($link2['url']) ? esc_url($link2['url']) : '';
+            $link2_text = isset($link2['title']) ? esc_html($link2['title']) : '';
+            $link2_target = isset($link2['target']) ? esc_attr($link2['target']) : '';
+            ?>
             <?php if (get_sub_field('inhoud_alinea') === "tekst"): ?>
                 <!-- TEKST -->  
                 <div id="<?php echo get_sub_field('extra_anchor_id');?>" class="container mt-[60px] grid gap-[30px] lg:flow-root relative z-[5]">
@@ -291,7 +303,7 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
             <?php if (get_sub_field('inhoud_alinea') === "een-afbeelding"): ?>
                 <!-- AFBEELDING -->  
                 <div class="container mt-[60px] grid gap-[30px] lg:block relative z-[5]">
-                    <div class="w-full aspect-video overflow-hidden rounded-[15px]">
+                    <div class="w-full h-auto max-w-[995px] overflow-hidden rounded-[15px]">
                         <img src="<?php echo $image4_url; ?>" alt="<?php echo $image4_alt; ?>" class="h-full min-h-full min-w-full object-center object-cover">
                     </div>
                 </div>   
@@ -340,6 +352,36 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
                         </div>
                         <div class="swiper-scrollbar mt-[40px]"></div>
                     </div>
+                </div>
+            <?php endif; ?>
+            <?php if (get_sub_field('inhoud_alinea') === "calltoaction"): ?>
+                <!-- TEKST -->  
+                <div class="w-full md:w-[708px] lg:w-[1147px] xl:w-[1290px] mx-auto mt-[60px] relative z-[5]">
+                    <div class="w-full max-w-[995px] bg-[#FEFAE8] rounded-[15px] flex justify-center">
+                        <div class="w-[360px] md:w-[475px] lg:w-[675px] xl:w-[690px] my-[75px] md:my-[65px] lg:my-[85px]">
+                            <?php if (get_sub_field('extra_titel')): ?>  
+                            <h2 class="text-35 leading-44 md:text-40 md:leading-46 lg:text-48 lg:leading-50 xl:text-60 xl:leading-70 font-sora font-bold text-[#000000] text-center"><?php echo get_sub_field('extra_titel');?></h2>
+                            <?php endif; ?>
+                            <?php if (get_sub_field('extra_tekst_2')): ?>  
+                            <p class="text-16 leading-30 lg:text-15 lg:leading-28 xl:text-16 xl:leading-30 font-normal text-[#0F0E0E] mt-[20px] md:mt-[30px] lg:mt-[20px] w-full text-center"><?php echo get_sub_field('extra_tekst_2');?></p>
+                            <?php endif; ?>
+                            <div class="w-full md:w-fit mx-auto flex flex-col md:flex-row md:items-center md:space-x-[50px]">
+                                <?php if (get_sub_field('extra_button_1')): ?>  
+                                <div class="mt-[30px] md:mt-[45px] lg:mt-[30px] w-full md:w-fit">
+                                    <a href="<?php echo $link_url; ?>" class="skewed-button bg-[#162CF5] text-white" target="<?php echo $link_target; ?>"><?php echo $link_text; ?></a>
+                                </div>
+                                <?php endif; ?>
+                                <?php if (get_sub_field('extra_button_2')): ?>  
+                                <div class="mt-[30px] md:mt-[45px] lg:mt-[30px] w-auto flex items-center">
+                                    <div class="flex items-center h-full w-fit mx-auto">
+                                        <a href="<?php echo $link2_url; ?>" class="link-underline text-15 leading-25 font-bold text-[#000000] block w-fit mx-auto" target="<?php echo $link2_target; ?>"><?php echo $link2_text; ?></a>
+                                    </div>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
             <?php endif; ?>
             <?php

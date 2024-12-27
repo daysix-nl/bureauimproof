@@ -104,7 +104,7 @@ add_filter('block_categories_all', function ($categories) {
     array_unshift($categories,   
       [
         'slug'  => 'artikel',
-        'title' => 'Artikel',
+        'title' => 'Artikelen',
         'icon'  => null
     ],        
     [
@@ -361,7 +361,7 @@ function filter_posts() {
     $search_term = isset($_POST['search_term']) ? sanitize_text_field($_POST['search_term']) : '';
 
      // Specifieke posttypes instellen als standaard
-    $allowed_post_types = ['kennisbank', 'praktijkvoorbeeld', 'magazine', 'training', 'klantcase']; // Voeg hier je posttypes toe
+    $allowed_post_types = ['artikel', 'interview', 'cx-begrip']; // Voeg hier je posttypes toe
     $post_types = !empty($post_types) ? $post_types : $allowed_post_types; // Als geen posttypes geselecteerd, gebruik de opgegeven posttypes
 
     // Basisquery
@@ -431,5 +431,6 @@ function enqueue_filter_script() {
     ]);
 }
 add_action('wp_enqueue_scripts', 'enqueue_filter_script');
+
 
 

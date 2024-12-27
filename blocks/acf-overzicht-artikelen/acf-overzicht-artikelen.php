@@ -45,7 +45,7 @@ else: ?>
         <div id="filters" class="input-group flex flex-wrap lg:space-x-[8px] justify-between lg:justify-center">
         <div class="w-full md:w-[350px] lg:w-[350px] mb-[15px] lg:mb-[unset] h-[50px] relative overflow-hidden border-[1px] border-[#F2F2F2] rounded-[10px]">
             <select id="post-type-filter" data-placeholder="Categorie" class="selectbox w-full md:w-[350px] lg:w-[350px] h-[50px] flex items-center px-[15px] text-16 font-medium bg-white cursor-pointer">
-                <option value="">Selecteer onderwerp</option>
+                <option value="">Selecteer categorie</option>
                 <?php
                 // Haal het ACF selectievakje veld op
                 $acf_selected_values = get_field('jouw_selectievakje_veldnaam'); // Vervang 'jouw_selectievakje_veldnaam' door de naam van je veld
@@ -55,7 +55,7 @@ else: ?>
                     $acf_selected_values = [];
                 }
                 // Definieer de specifieke posttypes die je wilt tonen
-                $allowed_post_types = ['kennisbank', 'praktijkvoorbeeld', 'magazine', 'training', 'klantcase']; // Voeg hier je posttypes toe
+                $allowed_post_types = ['artikel', 'interview', 'cx-begrip']; // Voeg hier je posttypes toe
                 // Verkrijg de posttypes die getoond moeten worden
                 foreach ($allowed_post_types as $post_type_slug) {
                     $post_type = get_post_type_object($post_type_slug); // Haal de posttype object op
@@ -75,7 +75,7 @@ else: ?>
         </div>
         <div class="w-full md:w-[350px] lg:w-[350px] mb-[15px] lg:mb-[unset] h-[50px] relative overflow-hidden border-[1px] border-[#F2F2F2] rounded-[10px]">
             <select id="category-filter" data-placeholder="Onderwerp" class="selectbox w-full md:w-[350px] lg:w-[350px] h-[50px] flex items-center px-[15px] text-16 font-medium bg-white cursor-pointer">
-                <option value="">Selecteer categorie</option>
+                <option value="">Selecteer onderwerp</option>
                 <?php
                 $categories = get_categories();
                 foreach ($categories as $category) {

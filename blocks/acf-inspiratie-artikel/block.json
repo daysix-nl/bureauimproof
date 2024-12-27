@@ -1,6 +1,6 @@
 {
-  "name": "acf-artikel",
-  "title": "Artikel",
+  "name": "acf-inspiratie-artikel",
+  "title": "Inspiratie",
   "description": "",
   "category": "artikel",
   "icon": "media-document",
@@ -13,7 +13,7 @@
   },
   "acf": {
     "mode": "preview",
-    "renderTemplate": "acf-artikel.php"
+    "renderTemplate": "acf-inspiratie-artikel.php"
   },
   "example": {
     "attributes": {
