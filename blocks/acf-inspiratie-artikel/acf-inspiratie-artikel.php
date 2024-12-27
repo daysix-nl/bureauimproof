@@ -44,7 +44,7 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
                     $teaser_image = get_the_post_thumbnail_url($team_member->ID, 'thumbnail');
                     ?>
                         <span class="mx-[18px]">|</span>
-                        <div class="flex items-center"><div class="h-[23px] w-[23px] rounded-full overflow-hidden"><img src="<?php echo esc_url( $teaser_image ); ?>" alt="" class="h-full min-h-full min-w-full object-center object-cover"></div><p class="ml-[12px] flex"><span class="hidden md:block mr-[5px]">Geschreven door:</span><?php echo esc_html( $team_member->post_title ); ?></p></div>
+                        <div class="flex items-center"><div class="h-[23px] w-[23px] rounded-full overflow-hidden bg-[#F7F7F7]"><img src="<?php echo esc_url( $teaser_image ); ?>" alt="" class="h-full min-h-full min-w-full object-center object-cover"></div><p class="ml-[12px] flex"><span class="hidden md:block mr-[5px]">Geschreven door:</span><?php echo esc_html( $team_member->post_title ); ?></p></div>
                     <?php endif; ?>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 mt-[30px]">
