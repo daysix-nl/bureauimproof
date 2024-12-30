@@ -357,7 +357,7 @@ $image2_alt = isset($image2['alt']) ? esc_attr($image2['alt']) : '';
             <?php if (get_sub_field('inhoud_alinea') === "calltoaction"): ?>
                 <!-- TEKST -->  
                 <div class="w-full md:w-[708px] lg:w-[1147px] xl:w-[1290px] mx-auto mt-[60px] relative z-[5]">
-                    <div class="w-full max-w-[995px] bg-[#FEFAE8] rounded-[15px] flex justify-center">
+                    <div class="w-full max-w-[995px] <?php echo get_sub_field('extra_achtergrond');?> rounded-[15px] flex justify-center">
                         <div class="w-[360px] md:w-[475px] lg:w-[675px] xl:w-[690px] my-[75px] md:my-[65px] lg:my-[85px]">
                             <?php if (get_sub_field('extra_titel')): ?>  
                             <h2 class="text-35 leading-44 md:text-40 md:leading-46 lg:text-48 lg:leading-50 xl:text-60 xl:leading-70 font-sora font-bold text-[#000000] text-center"><?php echo get_sub_field('extra_titel');?></h2>

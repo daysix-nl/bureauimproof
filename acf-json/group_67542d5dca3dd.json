@@ -751,6 +751,42 @@
                     "return_format": "array",
                     "allow_in_bindings": 0,
                     "parent_repeater": "field_675433f78ac3e"
+                },
+                {
+                    "key": "field_67724fcc86432",
+                    "label": "Achtergrond",
+                    "name": "extra_achtergrond",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6754340c8ac3f",
+                                "operator": "==",
+                                "value": "calltoaction"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "bg-zacht-geel": "Zacht geel",
+                        "bg-zacht-blauw": "Zacht blauw"
+                    },
+                    "default_value": "bg-zacht-geel",
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "parent_repeater": "field_675433f78ac3e"
                 }
             ]
         }
@@ -773,5 +809,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1735312785
+    "modified": 1735544993
 }
